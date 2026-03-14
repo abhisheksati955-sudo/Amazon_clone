@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #e3e6e6;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .btn {
+        font-size: 12px;
+      }
+
+      .search-bar {
+        width: 500px;
+      }
+
+      .search {
+        background-color: orange;
+      }
+
+      .all {
+        background-color: grey;
+      }
+
+      .nav2 {
+        background-color: #131921;
+      }
+
+      .small-text {
+        font-size: 12px;
+      }
+
+      .card {
+        height: 96%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img
+          src="https://freelogopng.com/images/all_img/1688364164amazon-logo-transparent.png"
+          alt="logo"
+          height="30px"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn btn-outline-light ms-3" type="submit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="10"
+            fill="currentColor"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+            />
+          </svg>
+          Delivering to aligarh 202001 <br />
+          <b>Update location</b>
+        </button>
+
+        <div class="input-group search-bar ms-3">
+          <span class="input-group-text ms-2 all">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  All
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </span>
+          <input
+            type="text"
+            class="form-control bg-white"
+            placeholder="Search Amazon.in"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <span class="input-group-text search"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              /></svg
+          ></span>
+        </div>
+        <div class="dropdown ms-2">
+          <button
+            class="btn dropdown-toggle ms-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://t4.ftcdn.net/jpg/00/79/07/81/360_F_79078102_2fa1JMfQY2nsWrYpsegWvHxPWHjwBZl4.jpg"
+              alt="img"
+              height="20px"
+            />
+            EN
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active small-text"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hello, sign in <br />
+              <b> Accounts and Lists</b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link active small-text"
+              >Returns <br />
+              <b>& Orders</b></a
+            >
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link active small-text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-cart ms-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+              <b>Cart</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg nav2" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="white"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            /></svg
+          >All</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Fresh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">MxPlayer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Bestseller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Mobiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true">Today's Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true"
+                >Customer Service</a
+              >
+            </li>
+          </ul>
+          <img
+            src="https://m.media-amazon.com/images/G/31/img21/APAY/ITD25/SMW_400x39_1._CB778584269_.png"
+            alt="img"
+            height="40px;"
+            class="ms-auto"
+          />
+        </div>
+      </div>
+    </nav>
+    <!-- 3rd navbar -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-6"
+          >1-48 of 112 results for
+          <span class="text-danger fw-bold"> "join amazon prime"</span></a
+        >
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            sort by: Featured
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+            <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+            <li><a class="dropdown-item" href="#">Avg. Customer Review</a></li>
+            <li><a class="dropdown-item" href="#">Newest Arrivals</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/2025/ridha/GW_Unrec/D323819370_DesktopHero_3000x1200._CB778388200_.jpg"
+            class="d-block w-100"
+            alt="img"
+            height="400px;"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Beauty/GW/Jupiter/leadup/38-1._CB777134738_.jpg"
+            class="d-block w-100"
+            alt="img"
+            height="400px;"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section>
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col-lg-3">
+            <div class="card p-3">
+              <h5><b>Continue shopping deals</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/61-Cc0O-xuL._AC_SY145_.jpg"
+                      alt="img"
+                      height="150px"
+                    />
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/51snRDNVPiL._AC_SY145_.jpg"
+                      alt="img"
+                      height="150px"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/61-Cc0O-xuL._AC_SY145_.jpg"
+                      alt="img"
+                      height="150px"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://m.media-amazon.com/images/I/71FJgzPHrPL._AC_SY145_.jpg"
+                      alt="img"
+                      height="150px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <a href="">see more deals</a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card p-3">
+              <h5><b>Revamp your home in style</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                      alt="img"
+                    />
+                    <p>Cushion covers,<br />bedsheet & more</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                      alt="img"
+                    />
+                    <p>Figurines, vases & more</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                      alt="img"
+                    />
+                    <p>Home storages</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                      alt="img"
+                    />
+                    <p>Lighting solutions</p>
+                  </div>
+                </div>
+              </div>
+              <a href="">Explore all</a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card p-3">
+              <h5><b>Appliances for your home | Up to 55% off</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+                      alt="img"
+                    />
+                    <p>Air conditioners</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+                      alt="img"
+                    />
+                    <p>Refrigerators</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                      alt="img"
+                    />
+                    <p>Microwaves</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+                      alt="img"
+                    />
+                    <p>Washing machines</p>
+                  </div>
+                </div>
+                <a href="">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mt-1">
+            <div class="row">
+              <div class="col-12">
+                <div class="card p-3">
+                  <h4>
+                    <b
+                      >Sign in for your best <br />
+                      experience</b
+                    >
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn bg-warning mt-2 mb-4"
+                    style="font-size: 15px; border-radius: 30px"
+                  >
+                    Sign in securely
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 mt-3 mb-3">
+                <img
+                  src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/5f554016-ae39-4284-b4fc-cf0d3be94b64.jpg"
+                  alt="img"
+                  height="250px;"
+                />
+              </div>
+              <p class="spon" style="font-size: 10px; text-align: right">
+                Sponsored<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="dark"
+                  class="bi bi-info-circle ms-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                  />
+                  <path
+                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                  />
+                </svg>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-3 mt-3">
+            <div class="card p-3">
+              <h5><b>Starting ₹149 | Headphones</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg"
+                      alt="img"
+                    />
+                    <p>Starting ₹249 | boAt</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg"
+                      alt="img"
+                    />
+                    <p>Starting ₹349 | boult</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg"
+                      alt="img"
+                    />
+                    <p>starting ₹649| Noise</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg"
+                      alt="img"
+                    />
+                    <p>Starting ₹149| Zebronics</p>
+                  </div>
+                </div>
+              </div>
+              <a href="">See all offers</a>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <div class="card p-3">
+              <h5><b>Automotive essentials | Up to 60% off</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"
+                      alt="img"
+                    />
+                    <p>Cleaning accesories</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"
+                      alt="img"
+                    />
+                    <p>Tyre & rim care</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"
+                      alt="img"
+                    />
+                    <p>Helmets</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"
+                      alt="img"
+                    />
+                    <p>Vacuum cleaner</p>
+                  </div>
+                </div>
+                <a href="">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-3">
+            <div class="card p-3">
+              <h5><b>Starting ₹199 | Amazon Brands & more</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_2._SY116_CB567468236_.jpg"
+                      alt="img"
+                    />
+                    <p>Starting ₹199 | Bedsheets</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_3._SY116_CB567468236_.jpg"
+                      alt="img"
+                    />
+                    <p>Starting ₹199 | Curtains</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_4._SY116_CB567468236_.jpg"
+                      alt="img"
+                    />
+                    <p>Minimum 40% off | Ironing board & more</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_1._SY116_CB567468236_.jpg"
+                      alt="img"
+                    />
+                    <p>Up to 60% off | Home decor</p>
+                  </div>
+                </div>
+                <a href="">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 mt-3">
+            <div class="card p-3">
+              <h5><b> Up to 50% off | Baby care & toys | Amazon Brands</b></h5>
+              <div class="row">
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_2_1x._SY116_CB788857785_.jpg"
+                      alt="img"
+                    />
+                    <p>Up to 50% off | Baby diapers & wipes</p>
+                  </div>
+                </div>
+                <div class="col-6 mb-2">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_1_1x._SY116_CB788857785_.jpg"
+                      alt="img"
+                    />
+                    <p>Up to 50% off | Ride ons</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_3_1x._SY116_CB788857785_.jpg"
+                      alt="img"
+                    />
+                    <p>starting ₹649| RC cars</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card">
+                    <img
+                      src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_4_1x._SY116_CB788857785_.jpg"
+                      alt="img"
+                    />
+                    <p>Up to 50% off | Baby safety essentials</p>
+                  </div>
+                </div>
+              </div>
+              <a href="">See more offers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <div class="card p-3 card1" style="margin-top: 15px">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="d-flex" style="gap: 15px">
+              <h3>
+                <b>
+                  Starting ₹70,348 | From daily commutes to weekend thrills</b
+                >
+              </h3>
+              <a href="">see all offers</a>
+            </div>
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/71KC5MgV57L._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61st4460pGL._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51eCFfeV9IL._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61gpcewMCEL._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/61ig8vHLU7L._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71RCJ8dgB-L._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71RCJ8dgB-L._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/716JVEokEQL._AC_SY200_.jpg"
+                  class="d-block w-85"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card p-3 card2" style="margin-top: 15px">
+        <div class="d-flex" style="gap: 15px">
+          <h3 class="mb-2">
+            <b
+              >Up to 60% off | Best offers on kitchen products | Amazon
+              Launchpad</b
+            >
+          </h3>
+          <a href="">see all offers</a>
+        </div>
+        <div
+          id="carouselExampleDark2"
+          class="carousel carousel-dark slide mt-5"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark2"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/61-6yDuvBxL._AC_SY200_.jpg"
+                  alt="..."
+                  height="190"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51DNiKZ855L._AC_SY200_.jpg"
+                  alt="..."
+                  height="190"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71ao5tgRCGL._AC_SY200_.jpg"
+                  alt="..."
+                  height="190"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61VwuY8hiyL._AC_SY200_.jpg"
+                  alt="..."
+                  height="190"
+                  class="me-5"
+                />
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/51PH6t3t47L._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/81zSKCAWjbL._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51a-nIZZH+L._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51EkbomEauL._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3">
+      <div class="row justify-content-center">
+        <div class="col-8 card">
+          <div
+            class="card3 mx-auto"
+            style="display: flex; justify-content: center"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/61gp3QNviKL._SL1500_.jpg"
+              alt="img"
+              height="300px;"
+            />
+            <div class="items" style="margin-top: 50px">
+              <h3>Airific Car Cabin Filter | Car AC Filter</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="25"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="25"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="25"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="25"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              <h5>
+                ₹1,545 <del>₹1995.00</del
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-check-lg ms-2 text-warning"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                  /></svg
+                ><span style="color: rgb(135, 212, 235); font-weight: 900"
+                  >prime</span
+                >
+              </h5>
+              <button type="button" class="btn btn-warning fs-5 rounded-3">
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xxl">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mt-3">
+          <div class="card p-3">
+            <h5><b>Best sellers in Beauty</b></h5>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/71cseSChxxL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61JZPwrTciL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61JZPwrTciL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51atYFf5PZL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card p-3">
+            <h5><b>Best Sellers in Clothing & Accessories</b></h5>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61t965dJIiL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/71I53evweVL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/619xMvtqClL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/81biKixsaDL._AC_SY170_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card p-3">
+            <h5><b>Keep shopping for</b></h5>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61gp3QNviKL._AC_SY95_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51LeRrGbbVL._AC_SY95_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51j8g+DhaZL._AC_SY95_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51-muSpXsmL._AC_SY95_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card">
+            <h5><b>Up to 60% off | Trending products from Emerging…</b></h5>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61JeMF3xF-L._AC_SY175_.jpg"
+                    alt="img"
+                    height="100px;"
+                  />
+                  <p>
+                    JustLatest Scalp Massage, Solar Powered Scalp Massager
+                    (Marble Pink), Head Massag…
+                  </p>
+                  <h3>₹79<sup>00</sup> M.R.P: <del>₹119.00</del></h3>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/41Zyg8wMXLL._AC_SY55_.jpg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/41qeGfY+M+L._AC_SY55_.jpg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51yLs5aw9wL._AC_SY55_.jpg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <img
+                    src="https://m.media-amazon.com/images/I/71t1rv7MIRL._AC_SY55_.jpg"
+                    alt="img"
+                  />
+                </div>
+              </div>
+              <a href="" class="fw-bold fs-6">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card p-3 card2" style="margin-top: 15px">
+        <div class="d-flex" style="gap: 15px">
+          <h3 class="mb-2">
+            <b>Up to 60% off | Your next smart TV awaits, grab the offer now</b>
+          </h3>
+          <a href="">see all offers</a>
+        </div>
+        <div
+          id="carouselExampleDark3"
+          class="carousel carousel-dark slide mt-5"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark3"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark3"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark3"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/81+9HeiyEGL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71QU6lRYwVL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71aARXewm6L._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51AvTZZqY5L._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/611Ygb98YuL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71Q6XdcmJzL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-4"
+                />
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/81tQ49RMwkL._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61bwFiwRLuL._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71ERwALONxL._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/617tZ9O7h4L._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61jB881bokL._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71lkzfDi7IL._AC_SY200_.jpg"
+                  class="me-4"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card p-3" style="margin-top: 15px">
+        <div class="d-flex" style="gap: 15px">
+          <h3 class="mb-2"><b>Best Sellers in Grocery & Gourmet Foods</b></h3>
+          <a href="">see all offers</a>
+        </div>
+        <div
+          id="carouselExampleDark4"
+          class="carousel carousel-dark slide mt-5"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark4"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark4"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark4"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/51dhZglj8LL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61HA0lc+dHL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/81xdDMf5StL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/81M6T+PF-iL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71wVU7pgwAL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/81SJTGKAfTL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61dK3VocRLL._AC_SY200_.jpg"
+                  alt="..."
+                  height="150"
+                  class="me-5"
+                />
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img
+                  src="https://m.media-amazon.com/images/I/71QVXbMgniL._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/71508gFiKoL._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/61TJmUT3h1L._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/51luMzqRZAL._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+                <img
+                  src="https://m.media-amazon.com/images/I/81jnU7BjO8L._AC_SY200_.jpg"
+                  class="me-5"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark4"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark4"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cotainer-fluid mt-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-lg-3">
+            <iframe
+              width="400"
+              height="315"
+              src="https://www.youtube.com/embed/4rkyJ3CqUU4?si=Nm2ab82_XgW8gAdq"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-lg-9">
+            <div class="card p-3" style="margin-left: 60px">
+              <div class="d-flex" style="gap: 15px">
+                <h3 class="mb-2">
+                  <b>Best Sellers in Grocery & Gourmet Foods</b>
+                </h3>
+                <a href="">see all offers</a>
+              </div>
+              <div
+                id="carouselExampleDark5"
+                class="carousel carousel-dark slide mt-5"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/61AtIIUDNcL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          alt="..."
+                          height="100"
+                          class="me-4"
+                        />
+                        <p class="font" style="font-size: 10px">
+                          Swiss Beauty Blusher 810-<br />-01,Shades <br /><b
+                            >₹325<sup>00</sup> <del>₹899</del></b
+                          >
+                        </p>
+                        <h5></h5>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/515W5cQZxDL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          alt="..."
+                          height="100"
+                          class="me-4"
+                        />
+                        <p class="font" style="font-size: 10px">
+                          Swiss Beauty Blusher 810-<br />-01,Shades
+                        </p>
+                      </div>
+
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/51gO6MDcVFL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          alt="..."
+                          height="100"
+                          class="me-4"
+                        />
+                        <p class="font" style="font-size: 10px">
+                          FACESCANADA Strobe<br />
+                          Cream - Silver, 30Ml | <br />
+                          Primer + Highlighter
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/71vTRTXzqHL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          alt="..."
+                          height="100"
+                          class="me-4"
+                        />
+                        <p class="font" style="font-size: 10px">
+                          MARS Fantasy Face Palette <br />
+                          with Blushes,Highlighters <br />
+                          and Bronzer| Highly
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/51rRFRmyKgL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          alt="..."
+                          height="100"
+                          class="me-4"
+                        />
+                        <p class="font" style="font-size: 10px">
+                          MARS Matte Box Set of 3 <br />
+                          Lipsticks for Women <br />
+                          | Long-Lasting | Smooth
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41NtevgF4+L._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-4"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          Mamaearth Long Stay <br />
+                          Kajal Black Retractable <br />
+                          Waterproof Pencil, With..
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41ZJ68OZkUL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          L'Oreal Paris Full Coverage <br />
+                          Concealer, High Cover, <br />
+                          Waterproof Formula,
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41I3TEx8UeL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          Mamaearth Long Stay <br />
+                          Kajal Black Retractable <br />
+                          Waterproof Pencil, With
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/51WeesY1muL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          O3+ Glow Shield <br />
+                          Sunscreen SPF 50 PA+++ <br />
+                          (50gm) | Lightweight..
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/51cDuFPuxbL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          Lotus Papayablem Cream, <br />
+                          Papaya-N-Saffron Anti <br />
+                          Blemish, 50g
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/61JD5eFA5eL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          The Face Shop Pure Aloe <br />
+                          Vera Gel, 300ml for Skin, <br />
+                          Hair & Body | Aloe Vera
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/61sl3VPZTEL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"
+                          height="100"
+                          class="me-5"
+                          alt="..."
+                        />
+                        <p
+                          class="font"
+                          style="font-size: 10px; text-align: center"
+                        >
+                          Sunny Herbals Glow <br />
+                          Sunscreen Spray | SPF 40 | <br />
+                          With Niacinamide |
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark5"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark5"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mt-3">
+          <div class="card p-4">
+            <h5><b>Flat ₹50 cashback | Fruits & vegetables | Amazon...</b></h5>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Nov23/PC2/1x/AllSubcat_RC_PC_1x_01._SY116_CB573024744_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Fruits</b></p>
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Nov23/PC2/1x/AllSubcat_RC_PC_1x_02._SY116_CB573024744_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>vegetables</b></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Nov23/PC2/1x/AllSubcat_RC_PC_1x_03._SY116_CB573024744_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Season's special</b></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Fresh/GW/BTF_QCs/Nov23/PC2/1x/AllSubcat_RC_PC_1x_04._SY116_CB573024744_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Visit the store</b></p>
+                </div>
+              </div>
+              <a href="" class="fw-bold fs-6">See all offers</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card p-4">
+            <h5><b>Latest styles | Dresses, kurta & more | 50% - 80%...</b></h5>
+            <div class="row">
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/GW/BTF_Refersh/June_17/PCQC/1x/New/05._SY116_CB555616559_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>kurta & sets</b></p>
+                </div>
+              </div>
+              <div class="col-6 mb-2">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/GW/BTF_Refersh/June_17/PCQC/1x/New/07._SY116_CB555616559_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Tops</b></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/GW/BTF_Refersh/June_17/PCQC/1x/New/04._SY116_CB555616559_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Dresses</b></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/GW/BTF_Refersh/June_17/PCQC/1x/New/06._SY116_CB555616559_.jpg"
+                    alt="img"
+                    height="150px;"
+                  />
+                  <p><b>Sarees</b></p>
+                </div>
+              </div>
+              <a href="" class="fw-bold fs-6">See all deals</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card p-3">
+            <h5><b>Starting ₹99 | Start your fitness journey</b></h5>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg"
+                    alt="img"
+                    height="390px;"
+                  />
+                </div>
+              </div>
+              <a href="" class="fw-bold fs-6">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <div class="card p-3">
+            <h5><b>Up to 50% off | International brands</b></h5>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <img
+                    src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/2025/WK_1/PC_CC_379X304_46._SY304_CB778301020_.jpg"
+                    alt="img"
+                    height="390px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <a href="" class="fw-bold fs-6">See all offers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner card">
+        <div class="d-flex p-2" style="gap: 10px">
+          <h5><b>Related to items you've viewed</b></h5>
+          <a href="">see more</a>
+        </div>
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/71Q2ydI5lzL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p class="" style="font-size: 15px; color: blue">
+                Majestic Man Men's <br />
+                Cotton Blend Regular Fit <br />
+                Casual Chikankari <br />
+                Embroidered Ethnic..
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              101
+              <p class="fs-6">
+                <span class="bg-danger">74%off</span> Black Friday deal
+              </p>
+              <h5>₹649.00</h5>
+              <p class="fs-6">
+                M.R.P:<del>₹2,499.00</del> <br />Get it by:
+                <b>Thursday December 4</b> <br />Free delivery by amazone
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/717rD5gEuTL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                Majestic Man Men's <br />
+                Cotton Regular Fit Casual <br />
+                Mandarin Collar Ethnic <br />
+                Motifs printed long..
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              1,131
+              <p><span class="bg-danger">74%off</span> Black Friday deal</p>
+              <h5>₹697.00</h5>
+              <p class="fs-6">
+                M.R.P:<del>₹2,499.00</del> <br />Get it by:
+                <b>Wednesday December 3</b> <br />Free delivery by amazone
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/61S4lz99dnL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                Majestic Man Men's <br />
+                Cotton Blend Regular Fit <br />
+                Casual Polyester <br />
+                Mandarin Collar Ethnic <br />
+                Motifs Embroidered Long <br />
+                Regular kurta..
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              402
+              <h5>₹649.00-₹699.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/61RwOZC0aYL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                See Designs Men's Cotton <br />
+                Embroidered Regular <br />
+                Kurta
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              187
+              <h5>₹990.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/51q45SjL0yL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                Majestic Man Men's <br />
+                Cotton Regular Fit Casual <br />
+                Mandarin Collar Ethnic <br />
+                Motifs Solid Long Kurta
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              31
+              <h5>₹650.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/71XQb2kq15L._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                DIVISIVE Men's Thread <br />
+                Embroidered Cotton Only <br />
+                Slim Fit kurta
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                /></svg
+              >1,389
+              <h5>₹732.32-₹849.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-evenly">
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/61cCqcrv1fL._AC_UL165_SR165,165_.jpg"
+                alt="IMG15"
+              />
+              <p class="" style="color: blue">
+                Amazon Brand - Symbol <br />
+                Men's 100% Cotton Solid <br />
+                Long Length Casual Kurta <br />-Regular Fit (Available in Plus
+                Size)
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              1,389
+
+              <h5>₹732.32-₹849.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/81FdgpZ-XuL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                Amazon Brand - Symbol <br />
+                Men Cotton Printed Long <br />
+                Kurta (Regular Fit).
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              520
+              <h5>₹689.00-₹899.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/51qkSiVIRoL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                LookMark Men's Rayon <br />
+                Regular Fit Casual Kurta
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              576
+              <h5>₹649.00-₹699.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/81oM2UFBhrL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                Amazon Brand - Symbol <br />
+                Men's 100% Cotton <br />
+                Everyday Mid Length <br />
+                Casual Kurta - Regular Fit<br />
+                (Available in Plus Size)
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              605
+              <h5>₹599.00-₹799.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/61ke3PfJnsL._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                LATEST CHIKAN Men's <br />
+                Cotton Regular Striped <br />
+                Knee Lenght Kurta Full <br />
+                Sleeves
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-half"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                />
+              </svg>
+              121
+              <h5>₹453.00-₹539.00</h5>
+            </div>
+            <div>
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/71XpSGol67S._AC_UL165_SR165,165_.jpg"
+                alt="img"
+              />
+              <p style="color: blue">
+                SOJANYA Men’s Ethnic <br />
+                Motifs Printed Kurta
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="25"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="orange"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+                /></svg
+              >645
+              <h5>₹873.00-₹999.00</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <hr />
+        <center>
+          <h3><b>See personalized recommendations</b></h3>
+          <button
+            type="button"
+            class="btn fs-6 fw-bold bg-warning"
+            style="border-radius: 20px; width: 250px"
+          >
+            Sign in
+          </button>
+          <p>
+            New customer? <a href=""><u>start here</u></a>
+          </p>
+          <hr />
+          <button
+            type="button"
+            class="w-100 p-2 fw-bold"
+            style="background-color: #232f3e; color: white"
+          >
+            Back to top
+          </button>
+        </center>
+      </div>
+    </div>
+    <div class="container-xxl" style="background-color: #232f3e; color: white">
+      <div class="row" style="padding: 30px 100px">
+        <div class="col-3">
+          <h5>
+            <b>Get to know<br />Us</b>
+          </h5>
+          <a href="" style="color: white">About amazon</a> <br />
+          <a href="" style="color: white">Career</a> <br />
+          <a href="" style="color: white">Press releases</a> <br />
+          <a href="" style="color: white">Amazon Science</a>
+        </div>
+        <div class="col-3">
+          <h5>
+            <b>Connect with <br />Us</b>
+          </h5>
+          <a href="" style="color: white">Facebook</a><br />
+          <a href="" style="color: white">Twitter</a><br />
+          <a href="" style="color: white">Instagram</a><br />
+        </div>
+        <div class="col-3">
+          <h5>
+            <b>Make money with<br />Us</b>
+          </h5>
+          <a href="" style="color: white">Sell on Amazon</a><br />
+          <a href="" style="color: white">Sell under Amazon Accelerator</a
+          ><br />
+          <a href="" style="color: white">Protect and Build Your Brand</a><br />
+          <a href="" style="color: white">Amazon Global Selling</a><br />
+        </div>
+        <div class="col-3">
+          <h5><b>Let Us Help You</b></h5>
+          <a href="" style="color: white">Your Accounts</a><br />
+          <a href="" style="color: white">Returns Centers</a><br />
+          <a href="" style="color: white">Recalls and Product Safety Alerts</a
+          ><br />
+          <a href="" style="color: white">Help</a>
+        </div>
+      </div>
+      <hr/>
+      <div
+        class="card3 d-flex justify-content-center"
+        style="gap: 50px; padding: 20px 0"
+      >
+        <div>
+          <img
+            src="https://freelogopng.com/images/all_img/1688364164amazon-logo-transparent.png"
+            alt="img"
+            height="30px"
+          />
+        </div>
+        <div class="buttons d-flex" style="gap: 10px; align-items: center">
+          <div class="button1">
+            <button
+              type="button"
+              class="btn text-white d-flex"
+              style="
+                border-color: white;
+                padding: 8px 8px;
+                gap: 6px;
+                align-items: center;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-globe2 me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49z"
+                />
+              </svg>
+              English
+            </button>
+          </div>
+          <div class="button2">
+            <button
+              type="button"
+              class="btn d-flex text-white"
+              style="
+                gap: 8px;
+                border-color: white;
+                padding: 8px 15px;
+                align-items: center;
+              "
+            >
+              <img
+                src="https://t4.ftcdn.net/jpg/00/79/07/81/360_F_79078102_2fa1JMfQY2nsWrYpsegWvHxPWHjwBZl4.jpg"
+                alt="img"
+                height="15px"
+              />
+              India
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
